@@ -1,6 +1,7 @@
 package com.br.prontuario.prontuarioeletronico.Utils;
 
 
+import com.br.prontuario.prontuarioeletronico.Model.CepDTO;
 import com.br.prontuario.prontuarioeletronico.Model.LoginDTO;
 import com.br.prontuario.prontuarioeletronico.Model.User;
 import com.google.gson.Gson;
@@ -35,6 +36,26 @@ public class RequisisaoFactory {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public static CepDTO getStreet(String cep){
+        Gson gson = new Gson();
+        try{
+            OkHttpClient client = new OkHttpClient();
+
+            Request request = new Request.Builder()
+                    .url("https://brasilapi.com.br/api/cep/v2/"+cep)
+                    .get()
+                    .addHeader("User-Agent", "insomnia/2023.5.8")
+                    .build();
+
+            Response response = client.newCall(request).execute();
+            CepDTO c = gson.fromJson(response.body().string(), CepDTO.class);
+            return c;
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
 }

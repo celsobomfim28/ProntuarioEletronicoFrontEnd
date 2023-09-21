@@ -35,12 +35,12 @@
             </DropShadow>
          </effect>
          <children>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="61.0">
                <image>
                   <Image url="@do-utilizador.png" />
                </image>
             </ImageView>
-            <MenuButton alignment="CENTER" layoutX="98.0" layoutY="208.0" mnemonicParsing="false" text="Ações Foto">
+            <MenuButton alignment="CENTER" layoutX="98.0" layoutY="208.0" mnemonicParsing="false" text="Ações Foto" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="98.0">
               <items>
                 <MenuItem mnemonicParsing="false" text="Enviar Imagem">
                      <graphic>
@@ -62,46 +62,38 @@
                   </MenuItem>
               </items>
             </MenuButton>
-            <Label layoutX="33.0" layoutY="263.0" text="Idade:">
+            <Label layoutX="33.0" layoutY="263.0" text="Idade:" AnchorPane.leftAnchor="32.0">
                <font>
                   <Font name="Arial Black" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="33.0" layoutY="287.0" text="CPF:">
+            <Label layoutX="33.0" layoutY="287.0" text="CPF:" AnchorPane.leftAnchor="32.0">
                <font>
                   <Font name="Arial Black" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="33.0" layoutY="312.0" text="Telefone:">
+            <Label layoutX="33.0" layoutY="312.0" text="Telefone:" AnchorPane.leftAnchor="32.0">
                <font>
                   <Font name="Arial Black" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="33.0" layoutY="337.0" text="Email:">
+            <Label layoutX="33.0" layoutY="337.0" text="Email:" AnchorPane.leftAnchor="32.0">
                <font>
                   <Font name="Arial Black" size="13.0" />
                </font>
             </Label>
-            <Label layoutX="33.0" layoutY="362.0" text="Cidade:">
+            <Label layoutX="33.0" layoutY="362.0" text="Cidade:" AnchorPane.leftAnchor="32.0">
                <font>
                   <Font name="Arial Black" size="13.0" />
                </font>
             </Label>
-            <Separator layoutX="36.0" layoutY="392.0" prefWidth="200.0" />
-            <Label layoutX="84.0" layoutY="265.0" text="Label">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Label>
-            <Label layoutX="73.0" layoutY="289.0" text="Label">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Label>
-            <Label layoutX="104.0" layoutY="314.0" text="Label" />
-            <Label layoutX="84.0" layoutY="339.0" text="Label" />
-            <Label layoutX="90.0" layoutY="364.0" text="Label" />
-            <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="36.0" layoutY="403.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #0439D9;" text="Salvar Novo Paciente" textFill="WHITE">
+            <Separator layoutX="36.0" layoutY="392.0" prefWidth="200.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" />
+            <Label layoutX="211.0" layoutY="264.0" text="Label" AnchorPane.rightAnchor="32.0" />
+            <Label layoutX="211.0" layoutY="288.0" text="Label" AnchorPane.rightAnchor="32.0" />
+            <Label layoutX="211.0" layoutY="313.0" text="Label" AnchorPane.rightAnchor="32.0" />
+            <Label layoutX="211.0" layoutY="338.0" text="Label" AnchorPane.rightAnchor="32.0" />
+            <Label layoutX="211.0" layoutY="363.0" text="Label" AnchorPane.rightAnchor="32.0" />
+            <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="36.0" layoutY="403.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #0439D9;" text="Salvar Novo Paciente" textFill="WHITE" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0">
                <font>
                   <Font name="Arial Black" size="12.0" />
                </font>
@@ -189,7 +181,7 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="14.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" promptText="____.___.____-__" />
+                                                <TextField fx:id="tf_cpf" layoutX="14.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" promptText="____.___.____-__" />
                                                 <Label layoutX="360.0" layoutY="207.0" text="RG">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
@@ -251,18 +243,18 @@
                                     <content>
                                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                              <children>
-                                                <Label layoutX="12.0" layoutY="31.0" text="CPF">
+                                                <Label layoutX="12.0" layoutY="31.0" text="Cep">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="12.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" promptText="_____________-____" />
+                                                <TextField fx:id="tf_cep" layoutX="12.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" promptText="_____________-____" />
                                                 <Label layoutX="209.0" layoutY="31.0" text="Endereço">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="209.0" layoutY="51.0" prefHeight="30.0" prefWidth="403.0" />
+                                                <TextField fx:id="tf_rua" layoutX="209.0" layoutY="51.0" prefHeight="30.0" prefWidth="403.0" />
                                                 <Label layoutX="623.0" layoutY="31.0" text="Número">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
@@ -280,19 +272,19 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="429.0" layoutY="111.0" prefHeight="30.0" prefWidth="169.0" />
+                                                <TextField fx:id="tf_bairro" layoutX="429.0" layoutY="111.0" prefHeight="30.0" prefWidth="169.0" />
                                                 <Label layoutX="610.0" layoutY="91.0" text="Cidade">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="610.0" layoutY="111.0" prefHeight="30.0" prefWidth="169.0" />
+                                                <TextField fx:id="tf_cidade" layoutX="610.0" layoutY="111.0" prefHeight="30.0" prefWidth="169.0" />
                                                 <Label layoutX="790.0" layoutY="90.0" text="Estado">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="790.0" layoutY="110.0" prefHeight="30.0" prefWidth="169.0" />
+                                                <TextField fx:id="tf_estado" layoutX="790.0" layoutY="110.0" prefHeight="30.0" prefWidth="169.0" />
                                                 <Label layoutX="14.0" layoutY="151.0" text="Naturalidade">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
