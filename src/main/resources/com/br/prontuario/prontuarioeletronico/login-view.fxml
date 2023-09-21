@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.textfield.CustomPasswordField?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1360.0" styleClass="fundo" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.prontuario.prontuarioeletronico.Controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="193.0" layoutY="94.0" prefHeight="568.0" prefWidth="1007.0" style="-fx-background-color: white;" styleClass="rounded" stylesheets="@style.css" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <SplitPane dividerPositions="0.5059422750424448" layoutX="31.0" layoutY="120.0" prefHeight="568.0" prefWidth="1009.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="518.0" prefWidth="542.0">
+                     <children>
+                        <Label layoutX="148.0" layoutY="84.0" text="MediCare" textFill="#020873">
+                           <font>
+                              <Font name="Bauhaus 93" size="44.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="91.0" layoutY="138.0" prefHeight="62.0" prefWidth="163.0" text="Faça login na sua conta" textFill="#0439d9" wrapText="true">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="51.0" fitWidth="49.0" layoutX="92.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@heartbeat_2791163.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="91.0" layoutY="215.0" text="Usuário" textFill="#656262">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <CustomTextField fx:id="tf_user" layoutX="91.0" layoutY="236.0" prefHeight="32.0" prefWidth="344.0" promptText="Digite seu nome de usuário" />
+                        <Label layoutX="91.0" layoutY="278.0" text="Senha" textFill="#656262">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <CustomPasswordField fx:id="tf_password" layoutX="91.0" layoutY="299.0" prefHeight="32.0" prefWidth="344.0" promptText="Digite sua senha" />
+                        <MFXButton buttonType="RAISED" layoutX="92.0" layoutY="401.0" onAction="#OnClickButtonLogin" prefHeight="32.0" prefWidth="154.0" style="-fx-background-color: #020873;" text="Entrar" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="13.0" />
+                           </font>
+                        </MFXButton>
+                        <MFXButton layoutX="329.0" layoutY="339.0" prefHeight="32.0" prefWidth="106.0" text="Esqueci a senha" textAlignment="RIGHT" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="304.0" styleClass="medico" stylesheets="@style.css">
+                     <children>
+                        <ImageView fitHeight="330.0" fitWidth="510.0" layoutX="7.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0">
+                           <image>
+                              <Image url="@image.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

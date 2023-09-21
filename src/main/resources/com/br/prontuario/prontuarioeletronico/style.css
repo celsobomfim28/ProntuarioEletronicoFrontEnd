@@ -1,0 +1,63 @@
+.fundo{
+    -fx-background-image: url("fundo.jpg");
+}
+
+.medico{
+    -fx-background-image: url("mulher.jpg");
+}
+
+.rounded{
+    border-radius: 25px;
+}
+
+.azul1{
+    -fx-text-fill: #020873;
+
+}
+.azul2{
+    -fx-text-fill: #0424D9;
+}
+.azul3{
+    -fx-text-fill: #0439D9;
+}
+.azul4{
+    -fx-text-fill: #2793F2;
+}
+.amarelo{
+    -fx-text-fill: #D9A648;
+}
+
+.fundo_azul{
+    -fx-background-color: #0439D9;
+}
+
+.rounded-button{
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+}
+
+.menu-button > .arrow-button {
+    -fx-padding: 0;
+}
+
+.menu-button > .arrow-button > .arrow {
+    -fx-padding: 0;
+}
+.custom-menu-item:focused{
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-color: -fx-base;
+}
+.custom-menu-item:hover {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-color: -fx-base;
+}
+.custom-menu-item:showing {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-color: -fx-base;
+}

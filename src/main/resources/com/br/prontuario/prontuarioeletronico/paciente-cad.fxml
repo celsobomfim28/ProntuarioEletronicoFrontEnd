@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="1360.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.prontuario.prontuarioeletronico.Controllers.PacienteCadControll">
+   <children>
+      <Label layoutX="10.0" layoutY="10.0" text="Cadastrar Paciente" textFill="#d9a648" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="Bauhaus 93" size="26.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="40.0" layoutY="93.0" prefHeight="465.0" prefWidth="271.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="1049.0" AnchorPane.topAnchor="93.0">
+         <effect>
+            <DropShadow radius="6.335" width="6.34">
+               <color>
+                  <Color opacity="0.4541984796524048" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="61.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@do-utilizador.png" />
+               </image>
+            </ImageView>
+            <MenuButton alignment="CENTER" layoutX="98.0" layoutY="208.0" mnemonicParsing="false" text="Ações Foto">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Enviar Imagem">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@upload-big-arrow.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                <MenuItem mnemonicParsing="false" text="Capturar Imagem">
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@simbolo-de-interface-de-camera-fotografica-para-botao.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+              </items>
+            </MenuButton>
+            <Label layoutX="33.0" layoutY="263.0" text="Idade:">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="287.0" text="CPF:">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="312.0" text="Telefone:">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="337.0" text="Email:">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="362.0" text="Cidade:">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Separator layoutX="36.0" layoutY="392.0" prefWidth="200.0" />
+            <Label layoutX="84.0" layoutY="265.0" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="289.0" text="Label">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="314.0" text="Label" />
+            <Label layoutX="84.0" layoutY="339.0" text="Label" />
+            <Label layoutX="90.0" layoutY="364.0" text="Label" />
+            <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="36.0" layoutY="403.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #0439D9;" text="Salvar Novo Paciente" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@salve-.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="327.0" layoutY="93.0" prefHeight="465.0" prefWidth="1004.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="327.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="93.0">
+         <effect>
+            <DropShadow radius="7.8025" width="12.21">
+               <color>
+                  <Color opacity="0.3549618422985077" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <TabPane layoutX="14.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab closable="false" text="Cadastro">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TabPane layoutX="30.0" layoutY="28.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Dados Básicos">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="27.0" text="Nome Completo">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="14.0" layoutY="47.0" prefHeight="30.0" prefWidth="536.0" />
+                                                <Label layoutX="775.0" layoutY="27.0" text="Email">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="774.0" layoutY="47.0" prefHeight="30.0" prefWidth="217.0" promptText="______@______.____" />
+                                                <Label layoutX="14.0" layoutY="86.0" text="Data de Nascimento">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <DatePicker layoutX="14.0" layoutY="106.0" prefHeight="30.0" prefWidth="327.0" promptText="____/_____/____" />
+                                                <Label layoutX="354.0" layoutY="86.0" text="Sexo">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox layoutX="354.0" layoutY="106.0" prefHeight="30.0" prefWidth="353.0" />
+                                                <Label layoutX="719.0" layoutY="86.0" text="Gênero">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <ComboBox layoutX="719.0" layoutY="106.0" prefHeight="30.0" prefWidth="271.0" />
+                                                <Label layoutX="14.0" layoutY="146.0" text="Celular">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="14.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
+                                                <Label layoutX="227.0" layoutY="146.0" text="Telefone Fixo">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="227.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
+                                                <Label layoutX="442.0" layoutY="146.0" text="Outro Telefone">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="442.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
+                                                <Label layoutX="14.0" layoutY="207.0" text="CPF">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="14.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" promptText="____.___.____-__" />
+                                                <Label layoutX="360.0" layoutY="207.0" text="RG">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="360.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <Label layoutX="574.0" layoutY="207.0" text="Emissor RG">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="574.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <Label layoutX="788.0" layoutY="207.0" text="Estado Civil">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="788.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <Label layoutX="143.0" layoutY="267.0" text="Passaport">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="143.0" layoutY="287.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <Label layoutX="14.0" layoutY="326.0" text="Nome Completo da Mãe">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="14.0" layoutY="346.0" prefHeight="30.0" prefWidth="536.0" />
+                                                <Label layoutX="561.0" layoutY="27.0" text="CNS">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="560.0" layoutY="47.0" prefHeight="30.0" prefWidth="200.0" promptText="_____.____.____.____" />
+                                                <CheckBox layoutX="224.0" layoutY="226.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Não Tem CPF">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </CheckBox>
+                                                <CheckBox layoutX="16.0" layoutY="287.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" text="Estrangeiro?">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                       <graphic>
+                                          <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@adicionar-usuario.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                  </Tab>
+                                  <Tab text="Endereço">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="12.0" layoutY="31.0" text="CPF">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="12.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" promptText="_____________-____" />
+                                                <Label layoutX="209.0" layoutY="31.0" text="Endereço">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="209.0" layoutY="51.0" prefHeight="30.0" prefWidth="403.0" />
+                                                <Label layoutX="623.0" layoutY="31.0" text="Número">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="623.0" layoutY="51.0" prefHeight="30.0" prefWidth="169.0" />
+                                                <Label layoutX="14.0" layoutY="91.0" text="Complemento">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="14.0" layoutY="111.0" prefHeight="30.0" prefWidth="403.0" />
+                                                <Label layoutX="429.0" layoutY="91.0" text="Bairro">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="429.0" layoutY="111.0" prefHeight="30.0" prefWidth="169.0" />
+                                                <Label layoutX="610.0" layoutY="91.0" text="Cidade">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="610.0" layoutY="111.0" prefHeight="30.0" prefWidth="169.0" />
+                                                <Label layoutX="790.0" layoutY="90.0" text="Estado">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="790.0" layoutY="110.0" prefHeight="30.0" prefWidth="169.0" />
+                                                <Label layoutX="14.0" layoutY="151.0" text="Naturalidade">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="14.0" layoutY="171.0" prefHeight="30.0" prefWidth="191.0" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                       <graphic>
+                                          <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@end.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                  </Tab>
+                                    <Tab text="Outras Informações">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="21.0" layoutY="31.0" text="Profissão">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="21.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
+                                                <Label layoutX="215.0" layoutY="31.0" text="Peso">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="215.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
+                                                <Label layoutX="409.0" layoutY="31.0" text="Altura">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="409.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
+                                                <ComboBox layoutX="603.0" layoutY="51.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <Label layoutX="604.0" layoutY="32.0" text="Tipo Sanguineo">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="813.0" layoutY="31.0" text="Cor/Raça">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField layoutX="813.0" layoutY="51.0" prefHeight="30.0" prefWidth="177.0" />
+                                                <Label layoutX="21.0" layoutY="91.0" styleClass="amarelo" text="CONDIÇÕES">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label layoutX="21.0" layoutY="152.0" styleClass="amarelo" text="OBSERVAÇÕES">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea layoutX="21.0" layoutY="195.0" prefHeight="161.0" prefWidth="303.0" />
+                                                <Label layoutX="21.0" layoutY="177.0" text="Observações Gerais">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea layoutX="335.0" layoutY="195.0" prefHeight="160.0" prefWidth="303.0" />
+                                                <Label layoutX="335.0" layoutY="177.0" text="Observações Clínicas">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextArea layoutX="648.0" layoutY="195.0" prefHeight="159.0" prefWidth="303.0" />
+                                                <Label layoutX="648.0" layoutY="177.0" text="Alergias">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <CheckBox layoutX="23.0" layoutY="116.0" mnemonicParsing="false" text="Hipertenso(a)">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </CheckBox>
+                                                <CheckBox layoutX="153.0" layoutY="116.0" mnemonicParsing="false" text="Diabético(a)">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </CheckBox>
+                                                <CheckBox layoutX="274.0" layoutY="116.0" mnemonicParsing="false" text="Gestante">
+                                                   <font>
+                                                      <Font name="Arial Black" size="13.0" />
+                                                   </font>
+                                                </CheckBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                       <graphic>
+                                          <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@info.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

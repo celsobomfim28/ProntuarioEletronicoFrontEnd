@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.CustomMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="624.0" prefWidth="1360.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.prontuario.prontuarioeletronico.Controllers.HomeController">
+   <children>
+      <BorderPane fx:id="geral_border_pane" layoutX="378.0" layoutY="256.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="36.0" prefWidth="1360.0" style="-fx-background-color: #2793F2;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="47.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@heartbeat_2791163.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="76.0" layoutY="4.0" text="MediCare" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="25.0" />
+                     </font>
+                  </Label>
+                  <MFXButton fx:id="bt_home" contentDisplay="TEXT_ONLY" depthLevel="LEVEL0" layoutX="206.0" layoutY="6.0" onAction="#open_home" style="-fx-background-color: #2793F2;" text="Home" textFill="#d9a648">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </MFXButton>
+                  <MFXButton fx:id="bt_paciente" contentDisplay="TEXT_ONLY" depthLevel="LEVEL0" layoutX="268.0" layoutY="6.0" onAction="#open_pacient" style="-fx-background-color: #2793F2;" text="Paciente" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </MFXButton>
+                  <MenuButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="1275.0" layoutY="2.0" maxHeight="49.0" maxWidth="51.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="51.0" style="-fx-background-color: transparent;" styleClass="rounded-button" text="MenuButton" textOverrun="CENTER_WORD_ELLIPSIS">
+                    <items>
+                        <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+                           <content>
+                              <Pane prefHeight="242.0" prefWidth="180.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <Label layoutX="78.0" layoutY="14.0" styleClass="azul2" text="Olá">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="31.0" layoutY="58.0" prefHeight="42.0" prefWidth="119.0" text="Celso Ricardo dos Santos Bomfim" textAlignment="CENTER" wrapText="true">
+                                       <font>
+                                          <Font name="Arial Black" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator layoutX="9.0" layoutY="136.0" prefHeight="4.0" prefWidth="163.0" />
+                                    <MFXButton alignment="BASELINE_LEFT" layoutX="9.0" layoutY="154.0" prefHeight="25.0" prefWidth="163.0" text="Acesso Suporte" textAlignment="CENTER">
+                                       <graphic>
+                                          <ImageView fitHeight="21.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@suporte-online.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </MFXButton>
+                                    <MFXButton alignment="BASELINE_LEFT" layoutX="9.0" layoutY="190.0" prefHeight="25.0" prefWidth="163.0" text="Seu Perfil" textAlignment="CENTER">
+                                       <graphic>
+                                          <ImageView fitHeight="21.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@user_1077012.png" />
+                                             </image>
+                                             <effect>
+                                                <ColorAdjust brightness="-1.0" />
+                                             </effect>
+                                          </ImageView>
+                                       </graphic>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </MFXButton>
+                                 </children>
+                              </Pane>
+                           </content>
+                        </CustomMenuItem>
+                    </items>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="78.0" fitWidth="24.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@do-utilizador_2.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="1360.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Home" textFill="#d9a648" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Bauhaus 93" size="26.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="52.0" layoutY="96.0" prefHeight="231.0" prefWidth="344.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" radius="8.535" width="15.14">
+                           <color>
+                              <Color opacity="0.27099236845970154" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <BarChart layoutX="6.0" layoutY="8.0" prefHeight="214.0" prefWidth="332.0" title="Principais Ruas Atendidas">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="471.0" layoutY="96.0" prefHeight="231.0" prefWidth="384.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" radius="8.535" width="15.14">
+                           <color>
+                              <Color opacity="0.27099236845970154" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <LineChart layoutX="8.0" layoutY="6.0" prefHeight="217.0" prefWidth="365.0" title="Atendimentos por Condicionalidades">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="926.0" layoutY="96.0" prefHeight="100.0" prefWidth="157.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" radius="8.535" width="15.14">
+                           <color>
+                              <Color opacity="0.27099236845970154" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Label layoutX="71.0" layoutY="10.0" styleClass="amarelo" text="0">
+                           <font>
+                              <Font name="Arial Black" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="3.0" layoutY="73.0" styleClass="azul1" text="Pacientes Cadastrados">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="926.0" layoutY="227.0" prefHeight="100.0" prefWidth="157.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" radius="8.535" width="15.14">
+                           <color>
+                              <Color opacity="0.27099236845970154" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Label layoutX="71.0" layoutY="10.0" styleClass="amarelo" text="0">
+                           <font>
+                              <Font name="Arial Black" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="73.0" styleClass="azul1" text="Consultas Hoje">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="1149.0" layoutY="96.0" prefHeight="100.0" prefWidth="157.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" radius="8.535" width="15.14">
+                           <color>
+                              <Color opacity="0.27099236845970154" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Label layoutX="71.0" layoutY="10.0" styleClass="amarelo" text="0">
+                           <font>
+                              <Font name="Arial Black" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="46.0" prefHeight="54.0" prefWidth="154.0" styleClass="azul1" text="Pacientes Cadastrados no Último Mês" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Arial Black" size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="1150.0" layoutY="227.0" prefHeight="100.0" prefWidth="157.0" style="-fx-background-color: white;">
+                     <effect>
+                        <DropShadow blurType="ONE_PASS_BOX" radius="8.535" width="15.14">
+                           <color>
+                              <Color opacity="0.27099236845970154" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <Label layoutX="71.0" layoutY="11.0" styleClass="amarelo" text="0">
+                           <font>
+                              <Font name="Arial Black" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="2.0" layoutY="73.0" prefHeight="18.0" prefWidth="154.0" styleClass="azul1" text="Gestantes" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <AnchorPane layoutX="40.0" layoutY="342.0" prefHeight="232.0" prefWidth="1268.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="52.0" AnchorPane.topAnchor="342.0">
+                     <effect>
+                        <DropShadow height="6.34" radius="3.2824999999999998" width="8.79">
+                           <color>
+                              <Color opacity="0.442748099565506" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <BarChart layoutX="228.0" layoutY="-84.0" title="Consultas dos Últimos 12 Meses" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
