@@ -22,7 +22,6 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="586.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.prontuario.prontuarioeletronico.Controllers.PacienteAtualizarController">
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -192,7 +191,7 @@
                                                    <graphic>
                                                       <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@../../../../../../../../ProntuarioEletronico/src/main/resources/com/br/prontuario/prontuarioeletronico/adicionar-usuario.png" />
+                                                            <Image url="@adicionar-usuario.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
@@ -255,7 +254,7 @@
                                                    <graphic>
                                                       <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@../../../../../../../../ProntuarioEletronico/src/main/resources/com/br/prontuario/prontuarioeletronico/end.png" />
+                                                            <Image url="@end.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
@@ -343,7 +342,7 @@
                                                    <graphic>
                                                       <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@../../../../../../../../ProntuarioEletronico/src/main/resources/com/br/prontuario/prontuarioeletronico/info.png" />
+                                                            <Image url="@info.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
@@ -375,7 +374,7 @@
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="43.0">
                            <image>
-                              <Image url="@../../../../../../../../ProntuarioEletronico/src/main/resources/com/br/prontuario/prontuarioeletronico/do-utilizador.png" />
+                              <Image url="@do-utilizador.png" />
                            </image>
                         </ImageView>
                         <MenuButton alignment="CENTER" layoutX="20.0" layoutY="207.0" mnemonicParsing="false" text="Ações Foto" AnchorPane.leftAnchor="20.0">
@@ -384,7 +383,7 @@
                                  <graphic>
                                     <ImageView fitHeight="150.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../ProntuarioEletronico/src/main/resources/com/br/prontuario/prontuarioeletronico/upload-big-arrow.png" />
+                                          <Image url="@upload-big-arrow.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -393,7 +392,7 @@
                                  <graphic>
                                     <ImageView fitHeight="150.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../ProntuarioEletronico/src/main/resources/com/br/prontuario/prontuarioeletronico/simbolo-de-interface-de-camera-fotografica-para-botao.png" />
+                                          <Image url="@simbolo-de-interface-de-camera-fotografica-para-botao.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -406,7 +405,7 @@
                                  <graphic>
                                     <ImageView fitHeight="150.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../../../../../../ProntuarioEletronico/src/main/resources/com/br/prontuario/prontuarioeletronico/upload-big-arrow.png" />
+                                          <Image url="@printing.png" />
                                        </image>
                                     </ImageView>
                                  </graphic>
@@ -451,7 +450,7 @@
                            <graphic>
                               <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../../../ProntuarioEletronico/src/main/resources/com/br/prontuario/prontuarioeletronico/salve-.png" />
+                                    <Image url="@salve-.png" />
                                  </image>
                               </ImageView>
                            </graphic>
