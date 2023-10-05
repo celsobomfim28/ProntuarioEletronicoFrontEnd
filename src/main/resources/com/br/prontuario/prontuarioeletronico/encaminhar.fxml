@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.br.prontuario.prontuarioeletronico.Controllers.EncaminharController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="70.0" prefWidth="1360.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Encaminhar Paciente" textFill="#d9a648" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                     <font>
+                        <Font name="Bauhaus 93" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="516.0" prefWidth="1084.0">
+               <children>
+                  <AnchorPane layoutX="59.0" layoutY="26.0" prefHeight="465.0" prefWidth="1004.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="20.0">
+                     <effect>
+                        <DropShadow radius="7.8025" width="12.21">
+                           <color>
+                              <Color opacity="0.3549618422985077" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <TabPane layoutX="14.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <tabs>
+                              <Tab text="Encaminhamento">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TabPane layoutX="30.0" layoutY="28.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <tabs>
+                                                <Tab text="Dados Básicos">
+                                                   <content>
+                                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Label layoutX="14.0" layoutY="27.0" text="Nome Completo">
+                                                               <font>
+                                                                  <Font name="Arial Black" size="13.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField editable="false" layoutX="14.0" layoutY="47.0" prefHeight="30.0" prefWidth="536.0" text="Luiz Guilherme Fonseca Barbosa" />
+                                                            <Label layoutX="561.0" layoutY="27.0" text="CNS">
+                                                               <font>
+                                                                  <Font name="Arial Black" size="13.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField editable="false" layoutX="560.0" layoutY="47.0" prefHeight="30.0" prefWidth="200.0" promptText="_____.____.____.____" />
+                                                            <DatePicker editable="false" layoutX="14.0" layoutY="107.0" prefHeight="30.0" />
+                                                            <Label layoutX="14.0" layoutY="87.0" text="Data">
+                                                               <font>
+                                                                  <Font name="Arial Black" size="13.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <ComboBox layoutX="201.0" layoutY="107.0" prefHeight="30.0" prefWidth="233.0" />
+                                                            <Label layoutX="201.0" layoutY="86.0" text="Encaminhar Para:">
+                                                               <font>
+                                                                  <Font name="Arial Black" size="13.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label layoutX="447.0" layoutY="87.0" text="Prontuário">
+                                                               <font>
+                                                                  <Font name="Arial Black" size="13.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <TextField editable="false" layoutX="446.0" layoutY="107.0" prefHeight="30.0" prefWidth="316.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </content>
+                                                   <graphic>
+                                                      <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@adicionar-usuario.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Tab>
+                                             </tabs>
+                                          </TabPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <left>
+            <AnchorPane prefHeight="516.0" prefWidth="265.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutY="26.0" prefHeight="465.0" prefWidth="271.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <effect>
+                        <DropShadow radius="6.335" width="6.34">
+                           <color>
+                              <Color opacity="0.4541984796524048" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="43.0">
+                           <image>
+                              <Image url="@do-utilizador.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="20.0" layoutY="263.0" text="Idade:">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="287.0" text="CPF:">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="312.0" text="Telefone:">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="337.0" text="Email:">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="362.0" text="Cidade:">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="19.0" layoutY="392.0" prefWidth="200.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" />
+                        <Label fx:id="lb_idade" layoutX="71.0" layoutY="265.0" text="30 anos" AnchorPane.rightAnchor="20.0" />
+                        <Label fx:id="lb_cpf" layoutX="60.0" layoutY="289.0" text="000.001.002-00" AnchorPane.rightAnchor="20.0" />
+                        <Label fx:id="lb_telefone" layoutX="91.0" layoutY="314.0" text="(00) 9 0000-0000" AnchorPane.rightAnchor="20.0" />
+                        <Label fx:id="lb_email" layoutX="71.0" layoutY="339.0" text="joedo@gmail.com" AnchorPane.rightAnchor="20.0" />
+                        <Label fx:id="lb_cidade" layoutX="77.0" layoutY="364.0" text="Riachuelo" AnchorPane.rightAnchor="20.0" />
+                        <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="19.0" layoutY="403.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #0439D9;" text="Encaminhar" textFill="WHITE" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0">
+                           <font>
+                              <Font name="Arial Black" size="12.0" />
+                           </font>
+                        </MFXButton>
+                        <Label fx:id="lb_nome_paciente" layoutX="26.0" layoutY="13.0" lineSpacing="1.0" prefHeight="54.0" prefWidth="185.0" text="Luiz Guilherme Fonseca Barbosa" textAlignment="CENTER" wrapText="true" AnchorPane.topAnchor="13.0">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

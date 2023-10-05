@@ -88,12 +88,12 @@
                </font>
             </Label>
             <Separator layoutX="36.0" layoutY="392.0" prefWidth="200.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0" />
-            <Label layoutX="211.0" layoutY="264.0" text="Label" AnchorPane.rightAnchor="32.0" />
-            <Label layoutX="211.0" layoutY="288.0" text="Label" AnchorPane.rightAnchor="32.0" />
-            <Label layoutX="211.0" layoutY="313.0" text="Label" AnchorPane.rightAnchor="32.0" />
-            <Label layoutX="211.0" layoutY="338.0" text="Label" AnchorPane.rightAnchor="32.0" />
-            <Label layoutX="211.0" layoutY="363.0" text="Label" AnchorPane.rightAnchor="32.0" />
-            <MFXButton buttonType="RAISED" depthLevel="LEVEL1" layoutX="36.0" layoutY="403.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #0439D9;" text="Salvar Novo Paciente" textFill="WHITE" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0">
+            <Label fx:id="lb_idade" layoutX="211.0" layoutY="264.0" text="Label" visible="false" AnchorPane.rightAnchor="32.0" />
+            <Label fx:id="lb_cpf" layoutX="211.0" layoutY="288.0" text="Label" visible="false" AnchorPane.rightAnchor="32.0" />
+            <Label fx:id="lb_telefone" layoutX="211.0" layoutY="313.0" text="Label" visible="false" AnchorPane.rightAnchor="32.0" />
+            <Label fx:id="lb_email" layoutX="211.0" layoutY="338.0" text="Label" visible="false" AnchorPane.rightAnchor="32.0" />
+            <Label fx:id="lb_cidade" layoutX="211.0" layoutY="363.0" text="Label" visible="false" AnchorPane.rightAnchor="32.0" />
+            <MFXButton fx:id="bt_salvar" buttonType="RAISED" depthLevel="LEVEL1" layoutX="36.0" layoutY="403.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #0439D9;" text="Salvar Novo Paciente" textFill="WHITE" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="36.0">
                <font>
                   <Font name="Arial Black" size="12.0" />
                </font>
@@ -133,49 +133,49 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="14.0" layoutY="47.0" prefHeight="30.0" prefWidth="536.0" />
+                                                <TextField fx:id="tf_nome" layoutX="14.0" layoutY="47.0" prefHeight="30.0" prefWidth="536.0" />
                                                 <Label layoutX="775.0" layoutY="27.0" text="Email">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="774.0" layoutY="47.0" prefHeight="30.0" prefWidth="217.0" promptText="______@______.____" />
+                                                <TextField fx:id="tf_email" layoutX="774.0" layoutY="47.0" prefHeight="30.0" prefWidth="217.0" promptText="______@______.____" />
                                                 <Label layoutX="14.0" layoutY="86.0" text="Data de Nascimento">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <DatePicker layoutX="14.0" layoutY="106.0" prefHeight="30.0" prefWidth="327.0" promptText="____/_____/____" />
+                                                <DatePicker fx:id="tf_data" layoutX="14.0" layoutY="106.0" prefHeight="30.0" prefWidth="327.0" promptText="____/_____/____" />
                                                 <Label layoutX="354.0" layoutY="86.0" text="Sexo">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <ComboBox layoutX="354.0" layoutY="106.0" prefHeight="30.0" prefWidth="353.0" />
+                                                <ComboBox fx:id="cb_sexo" layoutX="354.0" layoutY="106.0" prefHeight="30.0" prefWidth="353.0" />
                                                 <Label layoutX="719.0" layoutY="86.0" text="Gênero">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <ComboBox layoutX="719.0" layoutY="106.0" prefHeight="30.0" prefWidth="271.0" />
+                                                <ComboBox fx:id="cb_genero" layoutX="719.0" layoutY="106.0" prefHeight="30.0" prefWidth="271.0" />
                                                 <Label layoutX="14.0" layoutY="146.0" text="Celular">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="14.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
+                                                <TextField fx:id="tf_celular" layoutX="14.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
                                                 <Label layoutX="227.0" layoutY="146.0" text="Telefone Fixo">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="227.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
+                                                <TextField fx:id="tf_tel_fixo" layoutX="227.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
                                                 <Label layoutX="442.0" layoutY="146.0" text="Outro Telefone">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="442.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
+                                                <TextField fx:id="tf_outro_tel" layoutX="442.0" layoutY="166.0" prefHeight="30.0" prefWidth="200.0" promptText="(___) _ _____-_____" />
                                                 <Label layoutX="14.0" layoutY="207.0" text="CPF">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
@@ -187,43 +187,43 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="360.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <TextField fx:id="tf_rg" layoutX="360.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
                                                 <Label layoutX="574.0" layoutY="207.0" text="Emissor RG">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="574.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <TextField fx:id="tf_emissor" layoutX="574.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
                                                 <Label layoutX="788.0" layoutY="207.0" text="Estado Civil">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="788.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <TextField fx:id="tf_estado_civil" layoutX="788.0" layoutY="227.0" prefHeight="30.0" prefWidth="200.0" />
                                                 <Label layoutX="143.0" layoutY="267.0" text="Passaport">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="143.0" layoutY="287.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <TextField fx:id="tf_passaport" layoutX="143.0" layoutY="287.0" prefHeight="30.0" prefWidth="200.0" />
                                                 <Label layoutX="14.0" layoutY="326.0" text="Nome Completo da Mãe">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="14.0" layoutY="346.0" prefHeight="30.0" prefWidth="536.0" />
+                                                <TextField fx:id="tf_nome_mae" layoutX="14.0" layoutY="346.0" prefHeight="30.0" prefWidth="536.0" />
                                                 <Label layoutX="561.0" layoutY="27.0" text="CNS">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="560.0" layoutY="47.0" prefHeight="30.0" prefWidth="200.0" promptText="_____.____.____.____" />
-                                                <CheckBox layoutX="224.0" layoutY="226.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Não Tem CPF">
+                                                <TextField fx:id="tf_cns" layoutX="560.0" layoutY="47.0" prefHeight="30.0" prefWidth="200.0" promptText="_____.____.____.____" />
+                                                <CheckBox fx:id="cb_no_cpf" layoutX="224.0" layoutY="226.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="129.0" text="Não Tem CPF">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </CheckBox>
-                                                <CheckBox layoutX="16.0" layoutY="287.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" text="Estrangeiro?">
+                                                <CheckBox fx:id="cb_estrangeiro" layoutX="16.0" layoutY="287.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" text="Estrangeiro?">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
@@ -260,13 +260,13 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="623.0" layoutY="51.0" prefHeight="30.0" prefWidth="169.0" />
+                                                <TextField fx:id="tf_numero" layoutX="623.0" layoutY="51.0" prefHeight="30.0" prefWidth="169.0" />
                                                 <Label layoutX="14.0" layoutY="91.0" text="Complemento">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="14.0" layoutY="111.0" prefHeight="30.0" prefWidth="403.0" />
+                                                <TextField fx:id="tf_complemento" layoutX="14.0" layoutY="111.0" prefHeight="30.0" prefWidth="403.0" />
                                                 <Label layoutX="429.0" layoutY="91.0" text="Bairro">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
@@ -290,7 +290,7 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="14.0" layoutY="171.0" prefHeight="30.0" prefWidth="191.0" />
+                                                <TextField fx:id="tf_natural" layoutX="14.0" layoutY="171.0" prefHeight="30.0" prefWidth="191.0" />
                                              </children>
                                           </AnchorPane>
                                     </content>
@@ -311,20 +311,20 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="21.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
+                                                <TextField fx:id="tf_profissao" layoutX="21.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
                                                 <Label layoutX="215.0" layoutY="31.0" text="Peso">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="215.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
+                                                <TextField fx:id="tf_peso" layoutX="215.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
                                                 <Label layoutX="409.0" layoutY="31.0" text="Altura">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="409.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
-                                                <ComboBox layoutX="603.0" layoutY="51.0" prefHeight="30.0" prefWidth="200.0" />
+                                                <TextField fx:id="tf_altura" layoutX="409.0" layoutY="51.0" prefHeight="30.0" prefWidth="184.0" />
+                                                <ComboBox fx:id="cb_tipo_sangue" layoutX="603.0" layoutY="51.0" prefHeight="30.0" prefWidth="200.0" />
                                                 <Label layoutX="604.0" layoutY="32.0" text="Tipo Sanguineo">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
@@ -335,7 +335,7 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField layoutX="813.0" layoutY="51.0" prefHeight="30.0" prefWidth="177.0" />
+                                                <TextField fx:id="tf_cor" layoutX="813.0" layoutY="51.0" prefHeight="30.0" prefWidth="177.0" />
                                                 <Label layoutX="21.0" layoutY="91.0" styleClass="amarelo" text="CONDIÇÕES">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
@@ -346,35 +346,35 @@
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextArea layoutX="21.0" layoutY="195.0" prefHeight="161.0" prefWidth="303.0" />
+                                                <TextArea fx:id="ta_obs_gerais" layoutX="21.0" layoutY="195.0" prefHeight="161.0" prefWidth="303.0" />
                                                 <Label layoutX="21.0" layoutY="177.0" text="Observações Gerais">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextArea layoutX="335.0" layoutY="195.0" prefHeight="160.0" prefWidth="303.0" />
+                                                <TextArea fx:id="ta_obs_clinicas" layoutX="335.0" layoutY="195.0" prefHeight="160.0" prefWidth="303.0" />
                                                 <Label layoutX="335.0" layoutY="177.0" text="Observações Clínicas">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <TextArea layoutX="648.0" layoutY="195.0" prefHeight="159.0" prefWidth="303.0" />
+                                                <TextArea fx:id="ta_alergias" layoutX="648.0" layoutY="195.0" prefHeight="159.0" prefWidth="303.0" />
                                                 <Label layoutX="648.0" layoutY="177.0" text="Alergias">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </Label>
-                                                <CheckBox layoutX="23.0" layoutY="116.0" mnemonicParsing="false" text="Hipertenso(a)">
+                                                <CheckBox fx:id="cb_hipertenso" layoutX="23.0" layoutY="116.0" mnemonicParsing="false" text="Hipertenso(a)">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </CheckBox>
-                                                <CheckBox layoutX="153.0" layoutY="116.0" mnemonicParsing="false" text="Diabético(a)">
+                                                <CheckBox fx:id="cb_diabetico" layoutX="153.0" layoutY="116.0" mnemonicParsing="false" text="Diabético(a)">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>
                                                 </CheckBox>
-                                                <CheckBox layoutX="274.0" layoutY="116.0" mnemonicParsing="false" text="Gestante">
+                                                <CheckBox fx:id="cb_gestante" layoutX="274.0" layoutY="116.0" mnemonicParsing="false" text="Gestante">
                                                    <font>
                                                       <Font name="Arial Black" size="13.0" />
                                                    </font>

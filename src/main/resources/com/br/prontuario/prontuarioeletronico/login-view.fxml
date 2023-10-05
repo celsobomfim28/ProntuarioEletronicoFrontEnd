@@ -45,7 +45,7 @@
                            </font>
                         </Label>
                         <CustomPasswordField fx:id="tf_password" layoutX="91.0" layoutY="299.0" prefHeight="32.0" prefWidth="344.0" promptText="Digite sua senha" />
-                        <MFXButton buttonType="RAISED" layoutX="92.0" layoutY="401.0" onAction="#OnClickButtonLogin" prefHeight="32.0" prefWidth="154.0" style="-fx-background-color: #020873;" text="Entrar" textFill="WHITE">
+                        <MFXButton fx:id="bt_login" buttonType="RAISED" layoutX="92.0" layoutY="401.0" onAction="#OnClickButtonLogin" prefHeight="32.0" prefWidth="154.0" style="-fx-background-color: #020873;" text="Entrar" textFill="WHITE">
                            <font>
                               <Font name="Arial Rounded MT Bold" size="13.0" />
                            </font>

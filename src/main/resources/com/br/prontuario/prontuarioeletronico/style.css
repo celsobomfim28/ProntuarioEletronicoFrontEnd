@@ -61,3 +61,11 @@
     -fx-faint-focus-color: transparent;
     -fx-color: -fx-base;
 }
+/* Estilo para ProgressBar indeterminada */
+.progress-bar:indeterminate {
+    -fx-background-color: linear-gradient(to right, #3498db, #3498db 50%, transparent 50%);
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+    -fx-accent: derive(-fx-text-box-border, -10%);
+}

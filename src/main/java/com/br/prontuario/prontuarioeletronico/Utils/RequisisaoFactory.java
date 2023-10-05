@@ -31,8 +31,13 @@ public class RequisisaoFactory {
                     .build();
 
             Response response = client.newCall(request).execute();
-            User user = gson.fromJson(response.body().string(), User.class);
-            return user;
+            if(response.isSuccessful()){
+                User user = gson.fromJson(response.body().string(), User.class);
+                return user;
+            }else{
+                return null;
+            }
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

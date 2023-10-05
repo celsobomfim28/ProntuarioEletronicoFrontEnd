@@ -28,7 +28,7 @@
          <top>
             <AnchorPane prefHeight="70.0" prefWidth="1360.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label text="Paciente" textFill="#d9a648" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
+                  <Label text="Atualizar Paciente" textFill="#d9a648" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="40.0">
                      <font>
                         <Font name="Bauhaus 93" size="26.0" />
                      </font>
